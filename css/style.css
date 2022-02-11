@@ -19,7 +19,11 @@
     border: 2px solid green;
     background: yellow;
     width: 30%;
-    height: 8rem; /* TODO "provide height = width" */
+    height: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    /*padding: ;*/
+    /*height: 1; /* TODO "provide height = width" */
 }
 
 .entry{
