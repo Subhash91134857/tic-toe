@@ -16,42 +16,68 @@
     <!--    my script-->
     <link rel="script" href="scripts/main_script.js">
     <title>Tic-toe game</title>
+
+    <script src="https://kit.fontawesome.com/4312416c22.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<div class="col-lg-6 col-md-9 col-sm-12">
-    <div class="row container-fluid">
-        <div class="box">
-            <h1 id="row1col1" class="entry"></h1>
-        </div>
-        <div class="box">
-            <h1 id="row1col2" class="entry"></h1>
-        </div>
-        <div class="box">
-            <h1 id="row1col3" class="entry"></h1>
-        </div>
-    </div>
-    <div class="row container-fluid">
-        <div onclick="textName()" class="box">
-            <h1 id="row2col1" class="entry"></h1>
-        </div>
-        <div class="box">
-            <h1 id="row2col2" class="entry"></h1>
-        </div>
-        <div class="box">
-            <h1 id="row2col3" class="entry"></h1>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 score_board">
+        <button onclick="reset_cell()" class="btn btn-dark btn-lg btn-download" type="button"><i class="fa fa-eraser"></i> Reset Cell
+        </button>
+        <button onclick="reset_score()" class="btn btn-outline-light btn-lg btn-download" type="button"><i class="fa fa-trash"></i>
+            Reset Score
+        </button>
+        <br>
+        <br>
+        <div class="card col-lg-10 col-md-10 col-sm-8">
+            <div class="card-header" style="background: lightseagreen">
+                <i class="fa fa-user"></i>
+                <span> Player O Score: </span>
+                <span id="score1">0</span>
+                <br>
+                <i class="fa fa-user-tie"></i>
+                <span>Player X Score:</span>
+                <span id="score2">0</span>
+            </div>
         </div>
     </div>
-    <div class="row container-fluid">
-        <div class="box">
-            <h1 id="row3col1" class="entry"></h1>
+    <div class="col-lg-6 col-md-7 col-sm-12">
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row1col1', 0)" class="box">
+                <h1 id="row1col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row1col2', 1)" class="box">
+                <h1 id="row1col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row1col3', 2)" class="box">
+                <h1 id="row1col3" class="entry"></h1>
+            </div>
         </div>
-        <div class="box">
-            <h1 id="row3col2" class="entry"></h1>
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row2col1', 3)" class="box">
+                <h1 id="row2col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row2col2', 4)" class="box">
+                <h1 id="row2col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row2col3', 5)" class="box">
+                <h1 id="row2col3" class="entry"></h1>
+            </div>
         </div>
-        <div class="box">
-            <h1 id="row3col3" class="entry"></h1>
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row3col1', 6)" class="box">
+                <h1 id="row3col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row3col2', 7)" class="box">
+                <h1 id="row3col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row3col3', 8)" class="box">
+                <h1 id="row3col3" class="entry"></h1>
+            </div>
         </div>
     </div>
+
 </div>
 
 <script src="scripts/main_script.js"></script>
