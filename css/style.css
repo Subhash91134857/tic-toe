@@ -15,12 +15,12 @@
 
 .entry{
     position: relative;
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: center;
     display: flex;
     justify-content: center;
     /*left: ;*/
-    top: -80px;
+    top: -40px;
 }
 
 
