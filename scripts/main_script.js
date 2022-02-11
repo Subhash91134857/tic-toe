@@ -22,6 +22,7 @@ const button7 = document.getElementById("row3col1")
 const button8 = document.getElementById("row3col2")
 const button9 = document.getElementById("row3col3")
 
+
 function addSymbol(id, i){  //i -> grid_num 0-8
     const box = document.getElementById(id)
     if(game_state===0 && (box.innerText === null || box.innerText==='')){
@@ -55,6 +56,10 @@ function reset_cell(){
 }
 
 function reset_score(){
+    player_2_score = 0; // 'X'
+    player_1_score = 0; // 'O'
+    score2.innerText = player_2_score.toString()
+    score1.innerText = player_1_score.toString()
     reset_cell()
 }
 
@@ -121,7 +126,6 @@ function checkWin(){
             score1.innerText = player_1_score.toString()
             game_state = 1 //stop
         }
-        return;
     }
 
 }
