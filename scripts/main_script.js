@@ -1,5 +1,12 @@
+var name1 = window.prompt("Enter the first player name")
+var name2 = window.prompt("Enter the second player name")
 
-
+if(name1 === '') name1 = 'A'
+if(name2 === '') name2 = 'B'
+if(name1 === null) name1 = 'A'
+if(name2 === null) name2 = 'B'
+document.getElementById("player1").innerText =  "Player " + name1 + " Score: "
+document.getElementById("player2").innerText =  "Player " + name2 + " Score: "
 
 var game_state = 0;      // running
 var previous_entry = 'X';
