@@ -1,7 +1,10 @@
-
+body{
+    background-color: lightblue;
+    padding: 3%;
+}
 .box{
     border: 2px solid green;
-    background: yellow;
+    background: lightyellow;
     width: 30%;
     height: 0;
     padding-top: 15%;
@@ -21,6 +24,28 @@
     justify-content: center;
     /*left: ;*/
     top: -40px;
+}
+
+hr{
+    width: 4%;
+    border-style: dotted none none;
+    border-width: 7px;
+    color: red;
+    margin: 25px auto 40px auto;
+}
+
+.score_board{
+    margin: 3%;
+}
+button{
+    margin: 3% 2%;
+}
+
+span{
+    font-size: 1.5rem;
+}
+.user{
+    font-size: x-large;
 }
 
 
