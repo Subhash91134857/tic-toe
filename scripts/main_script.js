@@ -170,9 +170,13 @@
             return
         }
 
+    }*/
+
+    function textName(){
+        var boxes=document.getElementById("row2col1")
+        boxes.innerText="*"
     }
 
 
 
-
- */
+ 
