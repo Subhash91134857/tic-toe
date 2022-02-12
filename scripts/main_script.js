@@ -8,7 +8,10 @@ if(name2 === null) name2 = 'B'
 document.getElementById("player1").innerText =  "Player " + name1 + " Score: "
 document.getElementById("player2").innerText =  "Player " + name2 + " Score: "
 
-var game_state = 0;      // running
+let congrats_modal = document.getElementById("congoModal")
+congrats_modal.style.visibility = "hidden"
+
+var game_state = 0;    // running
 var previous_entry = 'X';
 
 var matrix = [2,2,2,
@@ -85,11 +88,14 @@ function checkWin(){
                 player_2_score++  // 'X'
                 score2.innerText = player_2_score.toString()
                 game_state = 1
+                congratulation(name2)
             } else{
                 player_1_score++  // '0'
                 score1.innerText = player_1_score.toString()
                 game_state = 1 //stop
+                congratulation(name1)
             }
+
             return
         }
     }
@@ -102,11 +108,13 @@ function checkWin(){
                 player_2_score++  // 'X'
                 score2.innerText = player_2_score.toString()
                 game_state = 1 //stop
+                congratulation(name2)
             }
             else{
                 player_1_score++  // '0'
                 score1.innerText = player_1_score.toString()
                 game_state = 1 //stop
+                congratulation(name1)
             }
             return
         }
@@ -119,11 +127,13 @@ function checkWin(){
             player_2_score++  // 'X'
             score2.innerText = player_2_score.toString()
             game_state = 1 //stop
+            congratulation(name2)
         }
         else{
             player_1_score++  // '0'
             score1.innerText = player_1_score.toString()
             game_state = 1 //stop
+            congratulation(name1)
         }
         return
     }
@@ -134,17 +144,27 @@ function checkWin(){
             player_2_score++  // 'X'
             score2.innerText = player_2_score.toString()
             game_state = 1 //stop
+            congratulation(name2)
         }
         else{
             player_1_score++  // '0'
             score1.innerText = player_1_score.toString()
             game_state = 1 //stop
+            congratulation(name1)
         }
     }
 
 }
 
+function congratulation(name){
+    congrats_modal.style.visibility = "visible"
+    document.getElementById("winner_message").innerText = name + " has won this round🥳"
+}
 
+
+function cancel(){
+    congrats_modal.style.visibility = "hidden"
+}
 
 
  

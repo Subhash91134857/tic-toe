@@ -42,6 +42,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="col-lg-6 col-md-7 col-sm-12">
         <div class="row container-fluid">
             <div onclick="addSymbol('row1col1', 0)" class="box">
@@ -75,6 +79,18 @@
             <div onclick="addSymbol('row3col3', 8)" class="box">
                 <h1 id="row3col3" class="entry"></h1>
             </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="cong_dialog" id="congoModal">
+    <div class="card">
+        <div class="text-right cross" id="continue" onclick="cancel()"><i class="fa fa-times" onclick="cancel()"></i></div>
+        <div class="card-body text-center"><img src="https://img.icons8.com/bubbles/200/000000/trophy.png">
+            <h4>CONGRATULATIONS!</h4>
+            <p id="winner_message"></p>
+            <button id="btn_continue" class="btn btn-out btn-square continue" onclick="cancel()">CONTINUE</button>
         </div>
     </div>
 
