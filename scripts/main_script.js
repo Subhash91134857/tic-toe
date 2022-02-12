@@ -1,5 +1,5 @@
-var name1 = window.prompt("Enter the first player name")
-var name2 = window.prompt("Enter the second player name")
+let name1 = window.prompt("Enter the first player name")
+let name2 = window.prompt("Enter the second player name")
 
 if(name1 === '') name1 = 'A'
 if(name2 === '') name2 = 'B'
@@ -8,15 +8,18 @@ if(name2 === null) name2 = 'B'
 document.getElementById("player1").innerText =  "Player " + name1 + " Score: "
 document.getElementById("player2").innerText =  "Player " + name2 + " Score: "
 
-var game_state = 0;      // running
-var previous_entry = 'X';
+let congrats_modal = document.getElementById("congoModal")
+//congrats_modal.style.visibility = "collapse"
 
-var matrix = [2,2,2,
+let game_state = 0;    // running
+let previous_entry = 'X';
+
+let matrix = [2,2,2,
               2,2,2,
               2,2,2]
 
-var player_2_score = 0; // 'X'
-var player_1_score = 0; // 'O'
+let player_2_score = 0; // 'X'
+let player_1_score = 0; // 'O'
 
 const score2 = document.getElementById("score2")
 const score1 = document.getElementById("score1")
@@ -85,11 +88,14 @@ function checkWin(){
                 player_2_score++  // 'X'
                 score2.innerText = player_2_score.toString()
                 game_state = 1
+                congratulation(name2)
             } else{
                 player_1_score++  // '0'
                 score1.innerText = player_1_score.toString()
                 game_state = 1 //stop
+                congratulation(name1)
             }
+
             return
         }
     }
@@ -102,11 +108,13 @@ function checkWin(){
                 player_2_score++  // 'X'
                 score2.innerText = player_2_score.toString()
                 game_state = 1 //stop
+                congratulation(name2)
             }
             else{
                 player_1_score++  // '0'
                 score1.innerText = player_1_score.toString()
                 game_state = 1 //stop
+                congratulation(name1)
             }
             return
         }
@@ -119,11 +127,13 @@ function checkWin(){
             player_2_score++  // 'X'
             score2.innerText = player_2_score.toString()
             game_state = 1 //stop
+            congratulation(name2)
         }
         else{
             player_1_score++  // '0'
             score1.innerText = player_1_score.toString()
             game_state = 1 //stop
+            congratulation(name1)
         }
         return
     }
@@ -134,16 +144,27 @@ function checkWin(){
             player_2_score++  // 'X'
             score2.innerText = player_2_score.toString()
             game_state = 1 //stop
+            congratulation(name2)
         }
         else{
             player_1_score++  // '0'
             score1.innerText = player_1_score.toString()
             game_state = 1 //stop
+            congratulation(name1)
         }
     }
 
 }
 
+function congratulation(name){
+    congrats_modal.style.visibility = "visible"
+    document.getElementById("winner_message").innerText = name + " has won this round🥳"
+}
+
+
+function cancel(){
+    congrats_modal.style.visibility = "collapse"
+}
 
 
 
