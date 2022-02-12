@@ -1,5 +1,5 @@
-var name1 = window.prompt("Enter the first player name")
-var name2 = window.prompt("Enter the second player name")
+let name1 = window.prompt("Enter the first player name")
+let name2 = window.prompt("Enter the second player name")
 
 if(name1 === '') name1 = 'A'
 if(name2 === '') name2 = 'B'
@@ -11,15 +11,15 @@ document.getElementById("player2").innerText =  "Player " + name2 + " Score: "
 let congrats_modal = document.getElementById("congoModal")
 //congrats_modal.style.visibility = "collapse"
 
-var game_state = 0;    // running
-var previous_entry = 'X';
+let game_state = 0;    // running
+let previous_entry = 'X';
 
-var matrix = [2,2,2,
+let matrix = [2,2,2,
               2,2,2,
               2,2,2]
 
-var player_2_score = 0; // 'X'
-var player_1_score = 0; // 'O'
+let player_2_score = 0; // 'X'
+let player_1_score = 0; // 'O'
 
 const score2 = document.getElementById("score2")
 const score1 = document.getElementById("score1")
