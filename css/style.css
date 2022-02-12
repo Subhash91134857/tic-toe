@@ -113,8 +113,6 @@ h4 {
 .cong_dialog{
     position: absolute;
     top: 10%;
-    left: 20%;
-    right: 20%;
-    width: auto;
-    height: auto;
+    left: 5%;
+    right: 5%;
 }
