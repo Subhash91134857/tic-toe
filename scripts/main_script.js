@@ -9,7 +9,7 @@ document.getElementById("player1").innerText =  "Player " + name1 + " Score: "
 document.getElementById("player2").innerText =  "Player " + name2 + " Score: "
 
 let congrats_modal = document.getElementById("congoModal")
-congrats_modal.style.visibility = "hidden"
+//congrats_modal.style.visibility = "collapse"
 
 var game_state = 0;    // running
 var previous_entry = 'X';
@@ -163,7 +163,7 @@ function congratulation(name){
 
 
 function cancel(){
-    congrats_modal.style.visibility = "hidden"
+    congrats_modal.style.visibility = "collapse"
 }
 
 
