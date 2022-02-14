@@ -2,3 +2,9 @@ body{
     padding: 3%;
     background: #F3C2C2;
 }
+.canvas{
+    padding-top: 30%;
+    padding-bottom: 30%;
+    width: 100%;
+    background: #694E4E;
+}
