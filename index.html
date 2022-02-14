@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Arena</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/4312416c22.js" crossorigin="anonymous"></script>
+
+<!--    iconify design-->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!--  My CSS  -->
+    <link rel="stylesheet" href="css/homepage_style.css">
+
+</head>
+<body>
+
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
+            <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+        </div>
+        <div class="social-links d-none d-md-block">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <h1 class="logo"><a href="index.html">Games Arena</a></h1>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Tic Tac Toe</a></li>
+                        <li><a href="#">Magic Number</a></li>
+                        <li><a href="#">Game 3</a></li>
+                        <li><a href="#">Game 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header><!-- End Header -->
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1>Welcome!</h1>
+        <h2>Let's Play</h2>
+        <a href="#services" class="btn-get-started scrollto">Get Started</a>
+    </div>
+</section><!-- End Hero -->
+
+
+<main id="main">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Featured Games</span>
+                <h2>Featured Games</h2>
+            </div>
+
+            <div class="row">
+                <div onclick="play_tic_tac()" class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="icon-park-outline:cross-ring" data-width="64" data-height="64"></span></div>
+                        <h4>Tic Tac Toe</h4>
+                        <p>Play the classic Tic-Tac-Toe game (also called Noughts and Crosses) for free online with one or two players.</p>
+                    </div>
+                </div>
+
+                <div onclick="play_magic_number()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="twemoji:magic-wand" data-width="64" data-height="64"></span></div>
+                        <h4><a href="games/magic_number.html">Number Magic</a></h4>
+                        <p>Think of a number between 1 to 100, it will guess that</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="icon-park:brain" data-width="64" data-height="64"></span></div>
+                        <h4><a href="">Reaction Time</a></h4>
+                        <p>Measure your reaction time by playing this game (under development)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="openmoji:helicopter" data-width="64" data-height="64"></span></div>
+                        <h4><a href="">Helicopter-Obstacles</a></h4>
+                        <p>Fly Helicopter through obstacles for as more time as you can (under development)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="icons8:idea" data-width="64" data-height="64"></span></div>
+                        <h4><a href="">Game 5</a></h4>
+                        <p>Under Ideation phase</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+                    <div class="icon-box">
+                        <div class="icon"><span class="iconify" data-icon="icons8:idea" data-width="64" data-height="64"></span></div>
+                        <h4><a href="">Game 6</a></h4>
+                        <p>Under Ideation Phase</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Team</span>
+                <h2>Team</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+                    <div class="member">
+                        <img src="assets/img/team/team-1.jpg" alt="😌">
+                        <h4>Subhash Kumar</h4>
+                        <p>
+                            Description: Rehen de
+                        </p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+                    <div class="member">
+                        <img src="assets/img/team/team-2.jpg" alt="😌">
+                        <h4>Sachin Kumar</h4>
+                        <p>
+                            Description: Rehen de 2.0
+                        </p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/i-sachinkumar"><i class="fa fa-github"></i></a>
+                            <a href="https://instagram.com/ihrsachin"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Team Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+</footer><!-- End Footer -->
+
+
+<script src="scripts/homepage_script.js"></script>
+</body>
+</html>
