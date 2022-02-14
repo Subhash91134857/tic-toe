@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--    my css-->
+    <link rel="stylesheet" href="../css/tic_tac_style.css">
+
+    <!--    my script-->
+    <link rel="script" href="../scripts/tic_tac_script.js">
+    <title>Tic-toe game</title>
+
+    <script src="https://kit.fontawesome.com/4312416c22.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 score_board">
+        <button onclick="reset_cell()" class="btn btn-dark btn-lg btn-download" type="button"><i class="fa fa-eraser"></i> Erase Cell
+        </button>
+        <button onclick="reset_score()" class="btn btn-outline-light btn-lg btn-download" type="button"><i class="fa fa-trash"></i>
+            Reset Score
+        </button>
+        <br>
+        <br>
+        <div class="card col-lg-10 col-md-10 col-sm-8">
+            <div class="card-header" style="background: lightseagreen">
+                <i class="fa fa-user user"></i>
+                <span id="player1"></span>
+                <span id="score1">0</span>
+                <br>
+                <i class="fa fa-user-tie user"></i>
+                <span id="player2"></span>
+                <span id="score2">0</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-lg-6 col-md-7 col-sm-12">
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row1col1', 0)" class="box">
+                <h1 id="row1col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row1col2', 1)" class="box">
+                <h1 id="row1col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row1col3', 2)" class="box">
+                <h1 id="row1col3" class="entry"></h1>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row2col1', 3)" class="box">
+                <h1 id="row2col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row2col2', 4)" class="box">
+                <h1 id="row2col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row2col3', 5)" class="box">
+                <h1 id="row2col3" class="entry"></h1>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div onclick="addSymbol('row3col1', 6)" class="box">
+                <h1 id="row3col1" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row3col2', 7)" class="box">
+                <h1 id="row3col2" class="entry"></h1>
+            </div>
+            <div onclick="addSymbol('row3col3', 8)" class="box">
+                <h1 id="row3col3" class="entry"></h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="cong_dialog col-lg-8 col-md-8 col-sm-8 col-12" id="congoModal" style="visibility: collapse">
+    <div class="card">
+        <div class="text-right cross" id="continue" onclick="cancel()"><i class="fa fa-times" onclick="cancel()"></i></div>
+        <div class="card-body text-center"><img src="https://img.icons8.com/bubbles/200/000000/trophy.png" alt="trophy">
+            <h4>CONGRATULATIONS!</h4>
+            <p id="winner_message"></p>
+            <button id="btn_continue" class="btn btn-out btn-square continue" onclick="cancel()">CONTINUE</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="../scripts/tic_tac_script.js"></script>
+</body>
+</html>
