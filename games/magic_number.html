@@ -17,13 +17,15 @@
 
 <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-0"></div>
-    <div class="col-lg-8 col-md-8 col-sm-12">
-    <canvas id="canvas" class="canvas">
-        <img id="team1" src="../assets/img/team/team-1.jpg"/>
-        <span class="iconify" data-icon="emojione-monotone:building-construction"></span>
-    </canvas>
+    <div id="imgView" class="col-lg-6 col-md-6 col-sm-12">
+        <h1> Think of a number from 0 to 100 </h1>
+        <button onclick="next(0)"> Done! Let's Play </button>
     </div>
-    <div class="col-lg-2 col-md-2 col-sm-0"></div>
+    <div id="yesNo" style="visibility: hidden" class="col-lg-3 col-md-3 col-sm-0">
+        <h1> Can You find that number here </h1>
+        <button onclick="next(1)"> Yes </button>
+        <button onclick="next(0)"> No </button>
+    </div>
 </div>
 <script src="../scripts/magic_number.js"></script>
 </body>
