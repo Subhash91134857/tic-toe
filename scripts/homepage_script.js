@@ -5,6 +5,10 @@ function play_magic_number(){
     window.open("games/magic_number.html")
 }
 
+function solveCube(){
+    window.open("games/Rubik.html")
+}
+
 
 (function() {
     "use strict";
